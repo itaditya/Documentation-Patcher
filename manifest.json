@@ -1,0 +1,20 @@
+{
+    "name": "Doc Patcher",
+    "version": "1.0.0",
+    "description": "A chrome extension to automatically convert the codes given in documentations so that it becomes compatible with ReactJs, Pug/Jade etc. ",
+    "content_scripts": [{
+        "js": ["jquery.min.js", "script.js"],
+        "matches": ["https://getbootstrap.com/docs/*"]
+    }],
+    "permissions": [],
+    "icons": {
+        "16": "icon-16x16.png",
+        "24": "icon-24x24.png",
+        "32": "icon-32x32.png",
+        "64": "icon-64x64.png"
+    },
+    "browser_action": {
+      "default_icon": "icon-32x32.png"
+    },
+    "manifest_version": 2
+}
